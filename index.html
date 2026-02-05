@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blind Installation Kelowna | Professional Window Blinds Installation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Blind Installation Kelowna</h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#quote">Get Quote</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+1234567890" class="phone-link">+1 (234) 567-8900</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Blind Installation in Kelowna</h1>
+                <p>Expert window blind installation services for your home or business. Get an instant quote today!</p>
+                <a href="#quote" class="btn btn-primary">Get Instant Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Blind Installation</h3>
+                    <p>Professional installation of all types of window blinds including vertical, horizontal, roller, and cellular blinds.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Blind Repair</h3>
+                    <p>Expert repair services for damaged blinds, broken cords, and malfunctioning mechanisms.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Blind Removal</h3>
+                    <p>Safe and careful removal of old blinds to prepare for new installations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Custom Measurements</h3>
+                    <p>Precise measurements to ensure your blinds fit perfectly in your windows.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Commercial Services</h3>
+                    <p>Professional blind installation for offices, retail spaces, and commercial buildings.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Consultation</h3>
+                    <p>Expert advice on choosing the right blinds for your home's style and needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <h2>Get Your Instant Quote</h2>
+            <p class="section-subtitle">Fill out the form below to get an instant estimate for your blind installation</p>
+            
+            <div class="quote-form-container">
+                <form id="quoteForm" class="quote-form">
+                    <div class="form-group">
+                        <label for="numWindows">Number of Windows</label>
+                        <input type="number" id="numWindows" name="numWindows" min="1" max="50" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="blindType">Type of Blinds</label>
+                        <select id="blindType" name="blindType" required>
+                            <option value="">Select blind type</option>
+                            <option value="horizontal">Horizontal Blinds</option>
+                            <option value="vertical">Vertical Blinds</option>
+                            <option value="roller">Roller Blinds</option>
+                            <option value="cellular">Cellular/Honeycomb Blinds</option>
+                            <option value="roman">Roman Blinds</option>
+                            <option value="wood">Wood Blinds</option>
+                            <option value="aluminum">Aluminum Blinds</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="windowSize">Average Window Size</label>
+                        <select id="windowSize" name="windowSize" required>
+                            <option value="">Select window size</option>
+                            <option value="small">Small (up to 24" wide)</option>
+                            <option value="medium">Medium (24" - 48" wide)</option>
+                            <option value="large">Large (48" - 72" wide)</option>
+                            <option value="xlarge">Extra Large (72"+)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="propertyType">Property Type</label>
+                        <select id="propertyType" name="propertyType" required>
+                            <option value="">Select property type</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address (Kelowna area)</label>
+                        <input type="text" id="address" name="address" placeholder="Street address, Kelowna, BC" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Calculate Quote</button>
+                </form>
+
+                <div id="quoteResult" class="quote-result" style="display: none;">
+                    <h3>Your Instant Quote</h3>
+                    <div class="quote-details">
+                        <div class="quote-line">
+                            <span>Base Installation (per window):</span>
+                            <span id="basePrice">$0</span>
+                        </div>
+                        <div class="quote-line">
+                            <span>Number of Windows:</span>
+                            <span id="quoteWindows">0</span>
+                        </div>
+                        <div class="quote-line">
+                            <span>Blind Type Adjustment:</span>
+                            <span id="typeAdjustment">$0</span>
+                        </div>
+                        <div class="quote-line">
+                            <span>Size Adjustment:</span>
+                            <span id="sizeAdjustment">$0</span>
+                        </div>
+                        <div class="quote-line total">
+                            <span>Estimated Total:</span>
+                            <span id="totalPrice">$0</span>
+                        </div>
+                    </div>
+                    <p class="quote-note">*This is an estimate. Final pricing may vary based on on-site assessment.</p>
+                    <button type="button" class="btn btn-secondary" onclick="resetQuote()">Get Another Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Professional Blind Installation in Kelowna</h3>
+                    <p>We specialize in professional blind installation services throughout the Kelowna area. Our experienced team ensures your blinds are installed correctly, safely, and efficiently.</p>
+                    <p>Whether you need installation for a single window or an entire home, we provide quality service with attention to detail. We work with all types of blinds and window coverings to meet your needs.</p>
+                    <ul class="features-list">
+                        <li>✓ Licensed and insured professionals</li>
+                        <li>✓ Free on-site estimates</li>
+                        <li>✓ Same-day service available</li>
+                        <li>✓ Satisfaction guaranteed</li>
+                        <li>✓ Competitive pricing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas Serviced -->
+    <section class="areas">
+        <div class="container">
+            <h2>Areas We Service</h2>
+            <ul class="areas-list">
+                <li>Kelowna</li>
+                <li>Lake Country</li>
+                <li>South Kelowna</li>
+                <li>Vernon</li>
+                <li>West Kelowna</li>
+                <li>Penticton</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Ready to get started? Give us a call or fill out the quote form above!</p>
+                    <div class="contact-details">
+                        <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-8900</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@blindinstallationkelowna.com">info@blindinstallationkelowna.com</a></p>
+                        <p><strong>Hours:</strong> Monday - Friday: 8:00am - 5:00pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Blind Installation Kelowna</h4>
+                    <p>Professional blind installation services for your home or business.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Blind Installation</a></li>
+                        <li><a href="#services">Blind Repair</a></li>
+                        <li><a href="#services">Commercial Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Phone: <a href="tel:+1234567890">+1 (234) 567-8900</a></p>
+                    <p>Serving Kelowna & Okanagan</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Blind Installation Kelowna. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
