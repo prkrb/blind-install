@@ -66,10 +66,11 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: url('2023_city_view_from_knox_mountain.jpg') center/cover no-repeat;
     color: #fff;
     padding: 5rem 0;
     text-align: center;
+    position: relative;
 }
 
 .hero-content h1 {
@@ -225,6 +226,29 @@ body {
 .form-group select:focus {
     outline: none;
     border-color: #3498db;
+}
+
+.form-help {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #666;
+    font-style: italic;
+}
+
+.service-fields {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+}
+
+.service-price {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #3498db;
+    font-size: 1.1rem;
 }
 
 /* Quote Result */

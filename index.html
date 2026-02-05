@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blind Installation Kelowna | Professional Window Blinds Installation</title>
+    <title>Canadian Blind Works | Blind Services Kelowna | Cleaning, Repair, Installation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h1>Blind Installation Kelowna</h1>
+                    <h1>Canadian Blind Works</h1>
                 </div>
                 <nav class="nav">
                     <ul>
@@ -33,8 +33,8 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Professional Blind Installation in Kelowna</h1>
-                <p>Expert window blind installation services for your home or business. Get an instant quote today!</p>
+                <h1>Professional Blind Services in Kelowna</h1>
+                <p>Ultrasonic cleaning, mobile repairs, cutdowns, and installation services. Transparent pricing with no hidden fees. Get an instant quote today!</p>
                 <a href="#quote" class="btn btn-primary">Get Instant Quote</a>
             </div>
         </div>
@@ -46,28 +46,24 @@
             <h2>Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
+                    <h3>Ultrasonic Cleaning</h3>
+                    <p>Professional ultrasonic cleaning for vinyl, faux wood, aluminum, and fabric blinds. Pricing based on diagonal measurements per foot.</p>
+                    <p class="service-price">Starting at $7/foot</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile Repairs</h3>
+                    <p>Expert repair services for damaged blinds, broken cords, and malfunctioning mechanisms. Includes full inspection of every blind.</p>
+                    <p class="service-price">$149 first repair, $75 each additional</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile Cutdowns</h3>
+                    <p>On-site blind cutting and installation service for motorized products, faux wood venetians, roller shades, cellular shades, and more.</p>
+                    <p class="service-price">Starting at $149+</p>
+                </div>
+                <div class="service-card">
                     <h3>Blind Installation</h3>
-                    <p>Professional installation of all types of window blinds including vertical, horizontal, roller, and cellular blinds.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Blind Repair</h3>
-                    <p>Expert repair services for damaged blinds, broken cords, and malfunctioning mechanisms.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Blind Removal</h3>
-                    <p>Safe and careful removal of old blinds to prepare for new installations.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Custom Measurements</h3>
-                    <p>Precise measurements to ensure your blinds fit perfectly in your windows.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Commercial Services</h3>
-                    <p>Professional blind installation for offices, retail spaces, and commercial buildings.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Consultation</h3>
-                    <p>Expert advice on choosing the right blinds for your home's style and needs.</p>
+                    <p>Professional installation of all types of window blinds. Custom quotes tailored to your specific project needs.</p>
+                    <p class="service-price">Contact for pricing</p>
                 </div>
             </div>
         </div>
@@ -77,47 +73,73 @@
     <section id="quote" class="quote-section">
         <div class="container">
             <h2>Get Your Instant Quote</h2>
-            <p class="section-subtitle">Fill out the form below to get an instant estimate for your blind installation</p>
+            <p class="section-subtitle">Fill out the form below to get an instant estimate for your blind services</p>
             
             <div class="quote-form-container">
                 <form id="quoteForm" class="quote-form">
                     <div class="form-group">
-                        <label for="numWindows">Number of Windows</label>
-                        <input type="number" id="numWindows" name="numWindows" min="1" max="50" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="blindType">Type of Blinds</label>
-                        <select id="blindType" name="blindType" required>
-                            <option value="">Select blind type</option>
-                            <option value="horizontal">Horizontal Blinds</option>
-                            <option value="vertical">Vertical Blinds</option>
-                            <option value="roller">Roller Blinds</option>
-                            <option value="cellular">Cellular/Honeycomb Blinds</option>
-                            <option value="roman">Roman Blinds</option>
-                            <option value="wood">Wood Blinds</option>
-                            <option value="aluminum">Aluminum Blinds</option>
+                        <label for="serviceType">Service Type</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">Select service type</option>
+                            <option value="cleaning">Ultrasonic Cleaning</option>
+                            <option value="repair">Mobile Repairs</option>
+                            <option value="cutdown">Mobile Cutdowns</option>
+                            <option value="installation">Installation (Contact for Quote)</option>
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <label for="windowSize">Average Window Size</label>
-                        <select id="windowSize" name="windowSize" required>
-                            <option value="">Select window size</option>
-                            <option value="small">Small (up to 24" wide)</option>
-                            <option value="medium">Medium (24" - 48" wide)</option>
-                            <option value="large">Large (48" - 72" wide)</option>
-                            <option value="xlarge">Extra Large (72"+)</option>
-                        </select>
+                    <div id="cleaningFields" class="service-fields" style="display: none;">
+                        <div class="form-group">
+                            <label for="blindType">Type of Blinds</label>
+                            <select id="blindType" name="blindType">
+                                <option value="">Select blind type</option>
+                                <option value="vinyl">Vinyl / Faux Wood</option>
+                                <option value="wood">Authentic Wood</option>
+                                <option value="aluminum">Mini / 1" / 2" Aluminum</option>
+                                <option value="fabric">Fabric Shades (Honeycomb / Silhouette)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="totalFeet">Total Diagonal Measurement (feet)</label>
+                            <input type="number" id="totalFeet" name="totalFeet" min="0" step="0.1" placeholder="Enter total feet">
+                            <small class="form-help">Measure diagonally across all blinds</small>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="propertyType">Property Type</label>
-                        <select id="propertyType" name="propertyType" required>
-                            <option value="">Select property type</option>
-                            <option value="residential">Residential</option>
-                            <option value="commercial">Commercial</option>
-                        </select>
+                    <div id="repairFields" class="service-fields" style="display: none;">
+                        <div class="form-group">
+                            <label for="numRepairs">Number of Repairs</label>
+                            <input type="number" id="numRepairs" name="numRepairs" min="1" max="20" placeholder="Number of blinds needing repair">
+                            <small class="form-help">First repair: $149, each additional: $75</small>
+                        </div>
+                    </div>
+
+                    <div id="cutdownFields" class="service-fields" style="display: none;">
+                        <div class="form-group">
+                            <label for="numCutdowns">Number of Blinds</label>
+                            <input type="number" id="numCutdowns" name="numCutdowns" min="1" max="50" placeholder="Number of blinds">
+                            <small class="form-help">Starting at $149+ per blind (includes installation)</small>
+                        </div>
+                    </div>
+
+                    <div id="installationFields" class="service-fields" style="display: none;">
+                        <div class="form-group">
+                            <label for="numWindows">Number of Windows</label>
+                            <input type="number" id="numWindows" name="numWindows" min="1" max="50" placeholder="Number of windows">
+                        </div>
+                        <div class="form-group">
+                            <label for="blindTypeInstall">Type of Blinds</label>
+                            <select id="blindTypeInstall" name="blindTypeInstall">
+                                <option value="">Select blind type</option>
+                                <option value="motorized">Motorized Products</option>
+                                <option value="fauxwood">Faux Wood Venetians</option>
+                                <option value="roller">Roller Shades</option>
+                                <option value="silhouette">Silhouettes</option>
+                                <option value="cellular">Cellular Shades</option>
+                                <option value="zebra">Zebra Shades</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div class="form-group">
@@ -145,29 +167,10 @@
 
                 <div id="quoteResult" class="quote-result" style="display: none;">
                     <h3>Your Instant Quote</h3>
-                    <div class="quote-details">
-                        <div class="quote-line">
-                            <span>Base Installation (per window):</span>
-                            <span id="basePrice">$0</span>
-                        </div>
-                        <div class="quote-line">
-                            <span>Number of Windows:</span>
-                            <span id="quoteWindows">0</span>
-                        </div>
-                        <div class="quote-line">
-                            <span>Blind Type Adjustment:</span>
-                            <span id="typeAdjustment">$0</span>
-                        </div>
-                        <div class="quote-line">
-                            <span>Size Adjustment:</span>
-                            <span id="sizeAdjustment">$0</span>
-                        </div>
-                        <div class="quote-line total">
-                            <span>Estimated Total:</span>
-                            <span id="totalPrice">$0</span>
-                        </div>
+                    <div class="quote-details" id="quoteDetails">
+                        <!-- Dynamic content will be inserted here -->
                     </div>
-                    <p class="quote-note">*This is an estimate. Final pricing may vary based on on-site assessment.</p>
+                    <p class="quote-note">*This is an estimate. Final pricing may vary based on on-site assessment. Minimum charges may apply for mobile service.</p>
                     <button type="button" class="btn btn-secondary" onclick="resetQuote()">Get Another Quote</button>
                 </div>
             </div>
@@ -180,15 +183,16 @@
             <h2>Why Choose Us</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Professional Blind Installation in Kelowna</h3>
-                    <p>We specialize in professional blind installation services throughout the Kelowna area. Our experienced team ensures your blinds are installed correctly, safely, and efficiently.</p>
-                    <p>Whether you need installation for a single window or an entire home, we provide quality service with attention to detail. We work with all types of blinds and window coverings to meet your needs.</p>
+                    <h3>Transparent Pricing - No Hidden Fees</h3>
+                    <p>We believe in simplicity and transparency when it comes to pricing. No one appreciates getting a bill with additional fees and add-ons they weren't expecting. Travel fees, extra staff or overtime fees, disposal fees, tool fees, processing fees...the list goes on.</p>
+                    <p>This is why we list our pricing right here for all to see. It's not a secret what we charge for blind cleaning, blind repair, and blind installation. We want you to know exactly what you will see on your invoice before you decide to book with us.</p>
+                    <p>We want you to be confident in working with us as well as completely satisfied with your experience. We are here to help.</p>
                     <ul class="features-list">
+                        <li>✓ Transparent pricing - no hidden fees</li>
                         <li>✓ Licensed and insured professionals</li>
-                        <li>✓ Free on-site estimates</li>
-                        <li>✓ Same-day service available</li>
+                        <li>✓ Mobile service available</li>
+                        <li>✓ Full inspection included with repairs</li>
                         <li>✓ Satisfaction guaranteed</li>
-                        <li>✓ Competitive pricing</li>
                     </ul>
                 </div>
             </div>
@@ -220,7 +224,7 @@
                     <p>Ready to get started? Give us a call or fill out the quote form above!</p>
                     <div class="contact-details">
                         <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-8900</a></p>
-                        <p><strong>Email:</strong> <a href="mailto:info@blindinstallationkelowna.com">info@blindinstallationkelowna.com</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@canadianblindworks.com">info@canadianblindworks.com</a></p>
                         <p><strong>Hours:</strong> Monday - Friday: 8:00am - 5:00pm</p>
                     </div>
                 </div>
@@ -233,8 +237,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Blind Installation Kelowna</h4>
-                    <p>Professional blind installation services for your home or business.</p>
+                    <h4>Canadian Blind Works</h4>
+                    <p>Professional blind services for your home or business.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Services</h4>
@@ -251,7 +255,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Blind Installation Kelowna. All rights reserved.</p>
+                <p>&copy; 2025 Canadian Blind Works. All rights reserved.</p>
             </div>
         </div>
     </footer>
