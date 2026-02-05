@@ -66,7 +66,8 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('2023_city_view_from_knox_mountain.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('2023_city_view_from_knox_mountain.jpg') center/cover no-repeat;
     color: #fff;
     padding: 5rem 0;
     text-align: center;
@@ -77,12 +78,37 @@ body {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     opacity: 0.95;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.hero-cta-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.hero-trust {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 /* Buttons */
@@ -124,10 +150,58 @@ body {
     width: 100%;
 }
 
+/* Trust Badges Section */
+.trust-badges {
+    padding: 3rem 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.badges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.badge-item {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.badge-icon {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.badge-item h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.badge-item p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
 /* Services Section */
 .services {
     padding: 5rem 0;
     background-color: #f8f9fa;
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .services h2 {
@@ -167,10 +241,63 @@ body {
     line-height: 1.8;
 }
 
+/* Benefits Section */
+.benefits {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+.benefits h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-item {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.benefit-item h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.benefit-item p {
+    color: #666;
+    line-height: 1.8;
+}
+
 /* Quote Section */
 .quote-section {
     padding: 5rem 0;
-    background-color: #fff;
+    background-color: #f8f9fa;
+}
+
+.quote-benefit {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #e3f2fd;
+    border-radius: 5px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .quote-section h2 {
@@ -244,6 +371,16 @@ body {
     border: 1px solid #ddd;
 }
 
+.service-benefit {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #e8f5e9;
+    border-left: 3px solid #4caf50;
+    color: #2c3e50;
+    font-size: 0.95rem;
+    border-radius: 3px;
+}
+
 .service-price {
     margin-top: 1rem;
     font-weight: 600;
@@ -292,6 +429,53 @@ body {
     color: #666;
     font-style: italic;
     margin-bottom: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.testimonial-stars {
+    color: #ffc107;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-text {
+    color: #666;
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
 /* About Section */
@@ -420,6 +604,18 @@ body {
     text-decoration: underline;
 }
 
+.call-now {
+    font-size: 0.9rem;
+    color: #3498db;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.contact-cta {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
 /* Footer */
 .footer {
     background-color: #2c3e50;
@@ -486,8 +682,27 @@ body {
         font-size: 2rem;
     }
 
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
     .hero-content p {
         font-size: 1rem;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-cta-group .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .badges-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .quote-form-container {
@@ -496,5 +711,19 @@ body {
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .call-now {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.5rem;
     }
 }
